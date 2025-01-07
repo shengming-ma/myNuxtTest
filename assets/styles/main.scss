@@ -1,0 +1,51 @@
+// 定义一些常用的颜色变量
+$primary-color: #cdf2e7;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+
+// 重置一些常见元素的默认样式
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+// 定义一个通用的按钮样式
+button {
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: rgb(11, 27, 17);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+ 
+}
+
+// 定义一个导航栏的样式
+.navbar {
+  background-color: $secondary-color;
+  padding: 20px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $success-color;
+    }
+  }
+}
